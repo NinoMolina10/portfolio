@@ -2,29 +2,26 @@ import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
-//const loader = new GLTFLoader();
-
 window.canvas = document.getElementById('Latour')
-window.canvas.width = innerWidth
-window.canvas.height = innerHeight
+
 window.iw = innerWidth
-window.ih = innerWidth
+window.ih = innerHeight
 
-const scene = new THREE.Scene()
-const light = new THREE.PointLight(0xeeeeee, 4)
-scene.background = new THREE.Color(0xB8CCEA);
-scene.add(light)
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(70, iw / ih, 0.1, 1000); 
+const geometrie = new THREE.BoxGeometry(1, 1, 1); 
+const materiau = new THREE.MeshBasicMaterial({ color: 0xffffff });
+const maillage = new THREE.Mesh(geometrie, materiau);
+scene.add(maillage);
 
+camera.position.set(0, 0, 2);
 
+const rendu = new THREE.WebGLRenderer({ canvas });
 
-let loader = new THREE.ObjectLoader()
-loader.load(
-    '../../src/Photos/004_chess_rook.glb',
-    function(object) {
-        object.position.set(10, 0, 1)
-        scene.add(object)
-    }
-)
+function boucle() {
+    requestAnimationFrame(boucle);
+    maillage.rotation.y += 0.01; 
+    rendu.render(scene, camera);
+}
 
-
-
+boucle();
