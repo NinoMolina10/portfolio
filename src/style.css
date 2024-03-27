@@ -1,0 +1,256 @@
+ body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+.containeur{
+  display: flex;  
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;  
+  gap: 1px;
+  background-color: #B8CCEA;
+}
+
+/*########### Css concernant la page de d'accueil ####################*/
+
+.PresentoireAccueil{
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  gap: 16vh;
+  border-radius: 50px;
+  -webkit-box-shadow: 12px 12px 24px #9cadc7, -12px -12px 24px #d4ebff;
+  box-shadow: 12px 12px 24px #9cadc7, -12px -12px 24px #d4ebff;
+  height: 60vh;
+  width: 130vh;
+  align-self: center;
+}
+
+.fondimage{
+  background-image: url("../src/Photos/fond.jpg");
+}
+
+.textAccueil{
+  order: 1;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-around;  
+}
+
+.Nom{
+  order: 0;
+  font-size: 10vh;
+  height: 10vh;
+  width: 55vh;
+  font-family: "Playfair Display", serif;
+}
+
+.regle{
+  order: 1;
+  border-radius: 600px;
+  height: 15vh;
+  width: 55vh;
+  text-align: center;
+  background-color: #F1F1E6;
+}
+
+#plateau{
+  order: 0; 
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40vh;
+  width: 40vh;
+  background-color: #012C65;
+  border: 2px solid #000;
+}
+
+.carre{
+  height: 5vh;
+  width: 5vh;
+  position: relative;
+}
+
+.CaseBleuMajorelle{
+  background-color: #3569a0;
+}
+
+.Caseblanche{
+  background-color: #B8CCEA;
+}
+
+.noire{
+  fill: rgb(0, 0, 0);
+}
+
+.blanc{
+  fill: rgb(255, 218, 218);
+}
+.carre svg{
+  height: 4vh;
+  width: 4vh;
+  margin: 0.6vh;
+  position: relative;
+  z-index: -9;
+}
+
+.piece{
+  position: relative;
+  z-index: 9;
+}
+
+/*########### fin du Css concernant la page de d'accueil ####################*/
+
+/*########### Css concernant la page de presentation ####################*/
+
+.Presentation{
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  background:  #0063f7;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+.textPresentation{
+  order: 1;
+  display: flex;  
+  flex-direction: column;
+  gap: 6vw;
+}
+
+.Titre{
+  order: 0;
+  font-size: 3vw;
+  height: 4vw;
+  width: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+.Recit{
+  order: 1;
+  border-radius: 30px;
+  font-size: 1.7vw;
+  height: 20vw;
+  width: 37vw;
+  text-align: center;
+}
+
+#Latour{
+  order: 3;
+  background-color: #0ab82a;
+  width: 40vw;
+  height: 30vw;
+}
+#saumaire{
+  order: 0; 
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+  width: 100%;
+  background-color: #F1F1E6;
+}
+
+/*########### fin du Css concernant la page de presentation ####################*/
+
+/*########### Css concernant la page des projet ####################*/
+
+.LesProjets {
+  display: flex;
+  flex-direction: column;
+  gap: 100vw;
+  background-color: #0ab82a;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.TitreProjet {
+  order: 1;
+  font-size: 10vh;
+  height: 30%;
+  width: 100%;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  background-color: transparent;
+}
+
+.carrousel {
+  order: 3;
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 16vh;
+}
+
+.image{
+  height: 28vw;
+  width: 48vw;
+}
+.icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+}
+.icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: translateZ(-30vw) rotateY(0);
+  animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.icon-cards__content.step-animation {
+  animation: carousel 8s infinite steps(1) forwards;
+}
+.icon-cards__item {
+  position: absolute;
+  width: 35vw;
+  height: 23vw;
+  box-shadow: 0 5px 20px #969eaf;
+  border-radius: 6px;
+  transform-origin: center;
+}
+.icon-cards__item:nth-child(1) {
+  background: #B1BACE;
+  transform: rotateY(0) translateZ(35vw);
+}
+.icon-cards__item:nth-child(2) {
+  background: #B1BACE;
+  transform: rotateY(120deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(3) {
+  background: #B1BACE;
+  transform: rotateY(240deg) translateZ(35vw);
+}
+
+@keyframes carousel {
+  0%, 17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+ }
+  27.5%, 45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+ }
+  55%, 72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+ }
+  82.5%, 100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+ }
+}
+
+
+

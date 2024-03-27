@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portfolioNM/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script type="module" src="/portfolioNM/chess/Tour.js"></script> 
+</head>
+<title>portfolioNM</title>
+<body class>
+
+    <div class = "containeur">
+
+        <div class = "PresentoireAccueil">
+            <div class = "textAccueil"> 
+                <div class="Nom">Molina Nino</div>
+                <div class="regle">voici comment jouer</div>
+            </div>
+            <div id="plateau"></div>
+            <script src="/portfolioNM/chess/piece.js"></script>     
+            <script src="/portfolioNM/chess/chess.js"></script>                   
+        </div>
+
+    </div>
+
+    <div class = "containeur">
+
+        <div class="Presentation"> 
+             <div class = "textPresentation"> 
+                 <div class="Titre">Mes débuts en entreprise</div>
+                    <div class="Recit">Mon arrivée dans le monde du travail fut riche en nouveauté. 
+                        Bien loin du terrain binaire des études où exercice et résultat jouent coup sur coup. 
+                        Un échiquier à 100 cases et 100 couleurs m'attendait dès mes premier jours en entreprise. 
+                        Mon allié fidèle la curiosité m'accompagnait à chacun de mes coups sur ce nouveau plateau. 
+                        Au fil des rencontres avec les autres joueurs j'ai commencé a me familiarisé aux nouvelles règles. 
+                        Au même moment mon premier projet commença; la partie était lancée
+                    </div>
+                </div>
+             <div id="saumaire">
+                <input type="button" value="Les Projets">
+                <input type="button" value="Me contacter">
+                <input type="button" value="Mon CV">
+             </div>
+             <canvas id="Latour"></canvas>
+        </div>
+ 
+     </div>
+     
+     <div class = "containeur">
+
+        <script src="/portfolioNM/chess/carousel.js"></script>                   
+
+        <div class="LesProjet">
+
+            <div class="TitreProjet">Mes projets</div>
+
+            <div class="carrousel">
+             
+                <figure class="icon-cards mt-3">
+                    <div class="icon-cards__content">
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img src="/portfolioNM/src/Photos/Hermes.png" class="image"></span></div>
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"> <img src="/portfolioNM/src/Photos/Odin.png" class="image"></span></div>
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"><img src="/portfolioNM/src/Photos/rasbery.webp" class="image"></span></div>
+                    </div>
+                </figure>                                        
+          </div>
+
+        </div>
+
+     </div>
+
+     <div class ="containeur"></div>
+    
+</body>
+</html>
