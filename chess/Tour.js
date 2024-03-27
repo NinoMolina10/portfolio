@@ -19,7 +19,7 @@ scene.add(light)
 
 let loader = new THREE.ObjectLoader()
 loader.load(
-    '../portfolioNM/src/Photos/chess_rook.json',
+    '../../src/Photos/004_chess_rook.glb',
     function(object) {
         object.position.set(10, 0, 1)
         scene.add(object)
