@@ -3,86 +3,86 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 3745,
+      "count": 30122,
       "max": [
-        0.9820560216903687,
-        1.0022399425506592,
-        3.8300700187683105
+        81.6111831665039,
+        209.39781188964844,
+        81.61119079589844
       ],
       "min": [
-        -1.009060025215149,
-        -0.9888780117034912,
-        0.03715980052947998
+        -81.61119842529297,
+        -100.0000228881836,
+        -81.6111831665039
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 44940,
+      "byteOffset": 361464,
       "componentType": 5126,
-      "count": 3745,
+      "count": 30122,
       "max": [
+        0.9999973773956299,
         1.0,
-        1.0,
-        0.9999999403953552
+        0.9999997615814209
       ],
       "min": [
         -1.0,
         -1.0,
-        -0.9999999403953552
+        -0.9999973773956299
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 3745,
+      "count": 30122,
       "max": [
         1.0,
-        1.0
+        1.0000001192092896
       ],
       "min": [
-        0.0,
-        0.0
+        7.450580596923828e-08,
+        0.02071796916425228
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 14580,
+      "count": 163548,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "maxime.rouca (https://sketchfab.com/maxime.rouca)",
+      "author": "eduterrataca (https://sketchfab.com/eduterrataca)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/chess-rook-b7cf2ea41d22496882fcfa811f5f8b4c",
-      "title": "Chess Rook"
+      "source": "https://sketchfab.com/3d-models/004-chess-rook-53ca0316e8794e5a83f3a20532a3e13a",
+      "title": "004 Chess Rook"
     },
-    "generator": "Sketchfab-12.66.0",
+    "generator": "Sketchfab-12.68.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 58320,
+      "byteLength": 654192,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 29960,
-      "byteOffset": 58320,
+      "byteLength": 240976,
+      "byteOffset": 654192,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 89880,
-      "byteOffset": 88280,
+      "byteLength": 722928,
+      "byteOffset": 895168,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,23 +90,29 @@
   ],
   "buffers": [
     {
-      "byteLength": 178160,
+      "byteLength": 1618096,
       "uri": "scene.bin"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "Default",
+      "name": "Peca",
       "pbrMetallicRoughness": {
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.32526200972263164
+        "baseColorFactor": [
+          0.0159948,
+          0.0159948,
+          0.0159948,
+          1.0
+        ],
+        "metallicFactor": 0.2883003048780488,
+        "roughnessFactor": 0.2726753048780488
       }
     }
   ],
   "meshes": [
     {
-      "name": "Object_0",
+      "name": "Torre.000_Peca_0",
       "primitives": [
         {
           "attributes": {
@@ -150,11 +156,41 @@
       "children": [
         2
       ],
-      "name": "ed8a038fa83c480abe599020090cb0bc.obj.cleaner.materialmerger.gles"
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "18fbacb2112048a78dbc8f06964ed386.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "Torre.000"
     },
     {
       "mesh": 0,
-      "name": "Object_2"
+      "name": "Torre.000_Peca_0"
     }
   ],
   "scene": 0,
